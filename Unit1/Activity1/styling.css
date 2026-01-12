@@ -1,0 +1,27 @@
+body {
+    background-color: gray;
+    /*TODO 2: Center everything horizontally on the screen (including text) */
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+img {
+max-width: 400px;
+height: auto;
+border-radius: 23px;
+}
+
+.p-red {
+    color: red;
+}
+
+/* TODO 3: Add style for div so that it contains p. Hint: This should only take one attribute. */
+.mainDiv {
+    max-width: 400px;
+}
