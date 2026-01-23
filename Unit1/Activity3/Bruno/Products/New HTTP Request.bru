@@ -1,0 +1,15 @@
+meta {
+  name: 4-Delete products
+  type: http
+  seq: 1
+}
+
+delete {
+  url: http://localhost:3000/products/5
+  body: none
+  auth: none
+}
+
+assert {
+  res.message: eq "Products deleted"
+}

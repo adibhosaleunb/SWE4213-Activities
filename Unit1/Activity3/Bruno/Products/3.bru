@@ -1,0 +1,30 @@
+meta {
+  name: 3-Post product
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "title": "AirPods Pro (2nd Gen)",
+      "price": 180,
+      "condition": "good",
+      "category": "Electronics",
+      "description": "Works great. Includes case and extra tips.",
+      "seller": "Ethan",
+      "location": "Fredericton, NB",
+      "isSold": "true",
+      "createdAt" : "23-jan-2026"
+  }
+}
+
+tests {
+  const body = res.getBody();         
+  bru.setEnvVar("createdproductId", body.id);
+}
