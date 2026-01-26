@@ -1,3 +1,6 @@
+Performed Group Activity 
+Aditya B and Sierra 
+
 # Activity 4
 The goal of this activity is to teach you about authentication with JWT. Included in this folder is a demo application that has authentication working. Spend some time looking over the code to make sure that you understand how it is working.
 
